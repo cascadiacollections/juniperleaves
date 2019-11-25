@@ -1,0 +1,11 @@
+{
+  "name": "juniperleaves",
+  "version": "1.0.0",
+  "description": "www",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kevin T. Coughlin",
+  "license": "MIT"
+}
