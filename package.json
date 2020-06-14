@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "gulp test --clean",
-    "start": "http-server ./lib -o -p 8080"
+    "start": "npm run build && http-server ./lib -o -p 8080"
   },
   "author": "Kevin T. Coughlin",
   "license": "MIT",
