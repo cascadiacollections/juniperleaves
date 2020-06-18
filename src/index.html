@@ -1,18 +1,46 @@
 <!doctype html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153677663-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153677663-1');
+        </script>
         <title>Juniper Leaves</title>
-        <link rel='stylesheet' href='./main.css' type='text/css' />
-        <script type="text/javascript" src="./main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     </head>
     <body>
         <h1>Juniper Leaves</h1>
-        <p><a href="https://www.etsy.com/shop/JuniperLeaves" target="_blank">Visit Etsy</a></p>
-        <div class="wrapper">
+        <main class="wrapper">
             <img title="Item #1" alt="Item #1" src="https://i.etsystatic.com/7622985/r/il/5e263e/2060643708/il_794xN.2060643708_qoq3.jpg" />
             <span>Item #1</span>
             <span>$5.00</span>
-        </div>
-        <footer>Made in North Bend</footer>
+        </main>
+        <div id="paypal-button-container" style="width: 200px;"></div>
+        <footer><a href="https://twitter.com/cascadiacollections" target="_blank" title="Cascadia Collections">@cascadiacollections</a></footer> -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AbHVygC7CUXI8hfkfYhx_bqTttdq9yvXDpVluJ8SPpPeGPukIIC1ca80feCHJJqinIEXDM904Ursu7P2"></script>
+        <script>
+            paypal.Buttons({
+              createOrder: function(data, actions) {
+                return actions.order.create({
+                  purchase_units: [{
+                    amount: {
+                      value: '15.00'
+                    }
+                  }]
+                });
+              },
+              onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                  alert('Transaction completed by ' + details.payer.name.given_name);
+                });
+              }
+            }).render('#paypal-button-container'); // Display payment options on your web page
+          </script>
     </body>
 </html>
