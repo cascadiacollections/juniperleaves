@@ -1,30 +1,39 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153677663-1"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-153677663-1');
+          'use strict';
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-153677663-1');
         </script>
-        <title>Juniper Leaves</title>
+        <meta charset="utf-8">
+        <title>Juniper Leaves | Dog bandanas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Web presence for Juniper Leaves.">
+        <meta property="og:title" content="Juniper Leaves">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.juniperleaves.com">
+        <meta property="og:image" content="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <meta name="theme-color" content="#fafafa">
     </head>
     <body>
         <h1>Juniper Leaves</h1>
         <main class="wrapper">
-            <img title="Item #1" alt="Item #1" src="https://i.etsystatic.com/7622985/r/il/5e263e/2060643708/il_794xN.2060643708_qoq3.jpg" />
-            <span>Item #1</span>
-            <span>$5.00</span>
+            <img alt="Buffalo-plaid flannel dog bandana" src="https://i.etsystatic.com/7622985/r/il/5e263e/2060643708/il_794xN.2060643708_qoq3.jpg" />
+            <span>Buffalo-plaid flannel dog bandana</span>
+            <span>$15.00</span>
         </main>
         <div id="paypal-button-container" style="width: 200px;"></div>
-        <footer><a href="https://twitter.com/cascadiacollections" target="_blank" title="Cascadia Collections">@cascadiacollections</a></footer> -->
         <script src="https://www.paypal.com/sdk/js?client-id=AbHVygC7CUXI8hfkfYhx_bqTttdq9yvXDpVluJ8SPpPeGPukIIC1ca80feCHJJqinIEXDM904Ursu7P2"></script>
         <script>
+            'use strict';
             paypal.Buttons({
               createOrder: function(data, actions) {
                 return actions.order.create({
