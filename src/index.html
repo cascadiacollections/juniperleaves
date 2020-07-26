@@ -26,13 +26,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />    </head>
     <body>
         <h1>Juniper Leaves</h1>
-        <div class="your-class">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-        </div>
         <main class="wrapper">
-            <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/keIAAOSwm5NeBZeJ/s-l500.jpg" />
+            <div class="slideshow" style="width: 412px; height: 500px;">
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/keIAAOSwm5NeBZeJ/s-l500.jpg" />
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/GsAAAOSwzoxeBZeH/s-l500.jpg" />
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/rgwAAOSwnxxeBZtF/s-l500.jpg" />
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/hHcAAOSwRWdeBZr4/s-l500.jpg" />
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/GPYAAOSwgZteBZta/s-l500.jpg" />
+              <img alt="Buffalo-plaid flannel dog bandana" width="412" height="500" src="https://i.ebayimg.com/images/g/bDsAAOSwYk5eBZsC/s-l500.jpg" />
+            </div>
             <h2>Buffalo-plaid flannel dog bandana</h2>
             <span>$15.00</span><span>- Free shipping</span>
             <select>
@@ -75,9 +77,7 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
           <script type="text/javascript">
             $(document).ready(function(){
-              $('.your-class').slick({
-
-              });
+              $('.slideshow').slick({ autoplay: true, mobileFirst: true });
             });
           </script>
     </body>
