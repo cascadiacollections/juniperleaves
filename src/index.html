@@ -42,7 +42,7 @@
                   <option>Large</option>
                 </select>
                 <label for="order_quantity">Quantity:</label>
-                <input type="number" value="1" name="order_quantity" min="1" max="100" step="1" />
+                <input type="number" value="1" name="order_quantity" id="order_quantity" min="1" max="100" step="1" />
                 <div id="paypal-button-container" style="width: 200px;"></div>
               </form>
               <div class="sizing">
@@ -57,32 +57,6 @@
             </div>
         </main>
         <script src="https://www.paypal.com/sdk/js?client-id=AbHVygC7CUXI8hfkfYhx_bqTttdq9yvXDpVluJ8SPpPeGPukIIC1ca80feCHJJqinIEXDM904Ursu7P2"></script>
-        <script>
-            'use strict';
-            paypal.Buttons({
-              createOrder: function(data, actions) {
-                return actions.order.create({
-                  purchase_units: [{
-                    amount: {
-                      value: '15.00'
-                    }
-                  }]
-                });
-              },
-              onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                  alert('Transaction completed by ' + details.payer.name.given_name);
-                });
-              }
-            }).render('#paypal-button-container'); // Display payment options on your web page
-          </script>
-          <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-          <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script> -->
-          <script type="text/javascript">
-            $(document).ready(function() {
-              // $('.slideshow').slick({ autoplay: true, mobileFirst: true });
-            });
-          </script>
+        <script src="./index.js"></script>
     </body>
 </html>
