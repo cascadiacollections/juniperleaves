@@ -1,5 +1,5 @@
 {
-  "name": "juniperleaves",
+  "name": "@cascadiacollections/juniperleaves",
   "version": "1.0.0",
   "description": "www",
   "main": "./lib/index.js",
