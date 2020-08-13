@@ -3,5 +3,22 @@
     "files.trimTrailingWhitespace": true,
     "cSpell.words": [
         "paypal"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#557260",
+        "activityBar.activeBorder": "#3291B1",
+        "activityBar.background": "#557260",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#EAEEEA",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#557260",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#557260",
+        "titleBar.activeBackground": "#557260",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#e7e7e799",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "statusBarItem.remoteBackground": "#e7e7e799"
+      }
 }
