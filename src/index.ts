@@ -1,8 +1,8 @@
-declare var paypal;
+declare var paypal: any;
 
 paypal.Buttons({
-    createOrder: function(data, actions) {
-      const quantity = parseInt((document.getElementById('order_quantity')! as HTMLInputElement).value, 10);
+    createOrder: (data, actions) => {
+      const quantity: number = parseInt((document.getElementById('order_quantity') as HTMLInputElement).value, 10);
 
       return actions.order.create({
         purchase_units: [{
@@ -10,14 +10,14 @@ paypal.Buttons({
             value: 15.00 * quantity
           },
           items: [
-            { name: 'Buffalo plaid dog bandana', quantity: quantity }
+            { name: 'Buffalo plaid dog bandana', quantity }
           ]
         }]
       });
     },
-    onApprove: function(data, actions) {
-      return actions.order.capture().then(function(details) {
-        window.alert('Transaction completed by ' + details.payer.name.given_name);
+    onApprove: (data, actions) => {
+      return actions.order.capture().then((details) => {
+        window.alert(`Transaction completed by ${details.payer.name.given_name}`);
       });
     }
 }).render('#paypal-button-container');
