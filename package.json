@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "acorn": "6.4.2",
-    "ecstatic": "3.3.2",
+    "ecstatic": "4.1.4",
     "eslint": "7.14.0",
     "http-server": "0.12.3",
     "@rushstack/heft": "^0.4.3",
