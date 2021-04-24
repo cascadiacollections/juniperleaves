@@ -15,13 +15,13 @@
   "devDependencies": {
     "acorn": "6.4.2",
     "ecstatic": "4.1.4",
-    "eslint": "7.14.0",
+    "eslint": "7.25.0",
     "http-server": "0.12.3",
-    "@rushstack/heft": "^0.4.3",
-    "@rushstack/eslint-config": "^1.0.3",
-    "@microsoft/rush-stack-compiler-3.9": "^0.4.3",
+    "@rushstack/heft": "^0.29.1",
+    "@rushstack/eslint-config": "^2.3.4",
+    "@microsoft/rush-stack-compiler-3.9": "^0.4.44",
     "typescript": "3.9.4",
-    "@types/node": "14.0.27",
-    "@types/node-fetch": "2.5.7"
+    "@types/node": "14.14.41",
+    "@types/node-fetch": "2.5.10"
   }
 }
