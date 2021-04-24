@@ -1,3 +1,4 @@
+// tslint:disable-next-line:no-any
 declare var paypal: any;
 
 paypal.Buttons({
