@@ -6,3 +6,5 @@ dist
 lib
 .cache
 .heft
+lib-commonjs
+temp
