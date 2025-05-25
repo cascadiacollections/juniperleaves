@@ -960,6 +960,15 @@
     "@rushstack/rig-package" "0.2.13"
     jsonpath-plus "~4.0.0"
 
+"@rushstack/heft-config-file@0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft-config-file/-/heft-config-file-0.6.3.tgz#8f53f9f8e08868514da39edd2a4ea26c20070be6"
+  integrity sha512-t4VQnA8Q+TswiGqZjpFz70Ek1NeouBZJnHzaRtUq76bCdZh+frlM2V6QYnsJ/3YJaslZnc9gS+4Blv8c3lsL3w==
+  dependencies:
+    "@rushstack/node-core-library" "3.40.0"
+    "@rushstack/rig-package" "0.3.0"
+    jsonpath-plus "~4.0.0"
+
 "@rushstack/heft-jest-plugin@0.1.20":
   version "0.1.20"
   resolved "https://registry.yarnpkg.com/@rushstack/heft-jest-plugin/-/heft-jest-plugin-0.1.20.tgz#31411f24cd7d861af7dcc289f2d3ed27d6d1e8fb"
@@ -1016,14 +1025,14 @@
     webpack "~4.44.2"
     webpack-dev-server "~3.11.0"
 
-"@rushstack/heft@^0.36.3":
-  version "0.36.3"
-  resolved "https://registry.yarnpkg.com/@rushstack/heft/-/heft-0.36.3.tgz#972ca6ec7541816815761f3e5318d11df24709ae"
-  integrity sha512-2CaCbnH8DuSfu+0oYrgoqeyHpKQAWeTS6xQ+V+VAuPJXaKWkYW4M05roCkUi4ZjuDON97Mr9xQSCW9NeU4TEgA==
+"@rushstack/heft@^0.36.4":
+  version "0.36.4"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft/-/heft-0.36.4.tgz#c6df195252eb8da71e8fc49f5e582d0a66ee79bf"
+  integrity sha512-QIKv5wSJP9pOfwGMeIoZuVOLP6Qa4uIw8ESyo8A9ajOpa5PSyBcq/x5l055PjIL2/isCePmKyfmcvfg9+7CtHQ==
   dependencies:
-    "@rushstack/heft-config-file" "0.6.2"
+    "@rushstack/heft-config-file" "0.6.3"
     "@rushstack/node-core-library" "3.40.0"
-    "@rushstack/rig-package" "0.2.13"
+    "@rushstack/rig-package" "0.3.0"
     "@rushstack/ts-command-line" "4.9.0"
     "@rushstack/typings-generator" "0.3.9"
     "@types/tapable" "1.0.6"
@@ -1108,6 +1117,14 @@
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/@rushstack/rig-package/-/rig-package-0.2.13.tgz#418f0aeb4c9b33bd8bd2547759fc0ae91fd970c7"
   integrity sha512-qQMAFKvfb2ooaWU9DrGIK9d8QfyHy/HiuITJbWenlKgzcDXQvQgEduk57YF4Y7LLasDJ5ZzLaaXwlfX8qCRe5Q==
+  dependencies:
+    resolve "~1.17.0"
+    strip-json-comments "~3.1.1"
+
+"@rushstack/rig-package@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/rig-package/-/rig-package-0.3.0.tgz#334ad2846797861361b3445d4cc9ae9164b1885c"
+  integrity sha512-Lj6noF7Q4BBm1hKiBDw94e6uZvq1xlBwM/d2cBFaPqXeGdV+G6r3qaCWfRiSXK0pcHpGGpV5Tb2MdfhVcO6G/g==
   dependencies:
     resolve "~1.17.0"
     strip-json-comments "~3.1.1"
