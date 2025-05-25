@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const sass = require('sass'); // Import sass (dart-sass)
 
 /**
  * If the "--production" command-line parameter is specified when invoking Heft, then the
@@ -21,7 +22,12 @@ function createWebpackConfig({ production }) {
           use: [
             "style-loader",
             "css-loader",
-            "sass-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                implementation: sass, // Use dart-sass instead of node-sass
+              }
+            },
           ],
         },
         {

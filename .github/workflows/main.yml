@@ -26,3 +26,5 @@ jobs:
       run: yarn install --frozen-lockfile
     - name: Build
       run: yarn build
+      env:
+        NODE_OPTIONS: '--openssl-legacy-provider'
