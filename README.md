@@ -7,7 +7,19 @@ Juniper Leaves shop web presence
 
 ## Local development
 
-1. git clone the repo
-1. Install yarn `npm i -g yarn`
-1. Install dependencies `yarn install`
-1. Run local web server `yarn start`
+### Option 1: Traditional setup
+
+1. Clone the repo: `git clone https://github.com/cascadiacollections/juniperleaves.git`
+2. Install dependencies: `yarn install`
+3. Run local web server: `yarn start`
+
+### Option 2: Dev Container
+
+This project includes a dev container configuration that provides a consistent development environment.
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) and the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+2. Clone the repo: `git clone https://github.com/cascadiacollections/juniperleaves.git`
+3. Open the project in VS Code
+4. When prompted, click "Reopen in Container" or run the "Dev Containers: Reopen in Container" command
+5. The dev container will set up the environment and install dependencies automatically
+6. Run the local web server: `yarn start`

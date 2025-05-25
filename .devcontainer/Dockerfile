@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14
+FROM mcr.microsoft.com/devcontainers/javascript-node:0-20
