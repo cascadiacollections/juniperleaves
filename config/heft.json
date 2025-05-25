@@ -1,6 +1,15 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
-    "heftPlugins": [
-        { "plugin": "@rushstack/heft-webpack5-plugin" }
-    ]
+    "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+    "extends": "@rushstack/heft-web-rig/profiles/library/config/heft.json",
+    "phaseSettings": {
+        "build": {
+            "tasksByName": {
+                "webpack": {
+                    "taskPlugin": {
+                        "pluginPackage": "@rushstack/heft-webpack5-plugin"
+                    }
+                }
+            }
+        }
+    }
 }
