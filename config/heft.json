@@ -1,6 +1,21 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/heft/heft.schema.json",
-    "heftPlugins": [
-        { "plugin": "@rushstack/heft-webpack4-plugin" }
-    ]
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/v0/heft.schema.json",
+
+  "phasesByName": {
+    "build": {
+      "tasksByName": {
+        "typescript": {
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-typescript-plugin"
+          }
+        },
+        "webpack": {
+          "taskDependencies": ["typescript"],
+          "taskPlugin": {
+            "pluginPackage": "@rushstack/heft-webpack5-plugin"
+          }
+        }
+      }
+    }
+  }
 }
