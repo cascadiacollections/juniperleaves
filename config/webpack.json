@@ -1,0 +1,4 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/heft/webpack5.schema.json",
+  "webpackConfigFilePath": "../webpack.config.js"
+}
