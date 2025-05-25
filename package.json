@@ -7,9 +7,9 @@
     "url": "https://github.com/cascadiacollections/juniperleaves.git"
   },
   "scripts": {
-    "build": "heft build --clean",
-    "build:ci": "heft build --clean --production",
-    "start": "heft start"
+    "build": "heft run --to build",
+    "build:ci": "heft run --to build -- --production",
+    "start": "heft run-watch --to build"
   },
   "author": "Kevin T. Coughlin <kevin@cascadiacollections.com>",
   "license": "MIT",
