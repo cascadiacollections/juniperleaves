@@ -3,29 +3,10 @@
 
   "phasesByName": {
     "build": {
-      "cleanFiles": [
-        {
-          "sourcePath": "dist"
-        }
-      ],
       "tasksByName": {
         "typescript": {
-          "taskDependencies": ["copy-static-assets"],
           "taskPlugin": {
             "pluginPackage": "@rushstack/heft-typescript-plugin"
-          }
-        },
-        "copy-static-assets": {
-          "taskPlugin": {
-            "pluginPackage": "@rushstack/heft"
-          },
-          "taskEvents": {
-            "copyFiles": [
-              {
-                "sourcePath": "src/humans.txt",
-                "destinationFolders": ["dist"]
-              }
-            ]
           }
         },
         "webpack": {
