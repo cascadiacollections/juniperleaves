@@ -5,14 +5,20 @@
 # or to provide custom queries or build logic.
 name: "CodeQL"
 
+# Disable this workflow since GitHub default CodeQL setup is enabled
+# This prevents the conflict: "CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled"
 on:
-  push:
-    branches: [ master, main ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ master, main ]
-  schedule:
-    - cron: '26 22 * * 4'
+  # Commented out triggers to prevent this workflow from running
+  # push:
+  #   branches: [ master, main ]
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches: [ master, main ]
+  # schedule:
+  #   - cron: '26 22 * * 4'
+  
+  # This workflow will only run manually, when explicitly triggered
+  workflow_dispatch:
 
 jobs:
   analyze:
@@ -63,3 +69,11 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+
+# Note: This workflow has been disabled to prevent conflicts with GitHub's default CodeQL setup.
+# The error "CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled"
+# occurs when both custom and default configurations try to run simultaneously.
+# 
+# Options to resolve this issue:
+# 1. Keep this workflow disabled and use GitHub's default CodeQL setup (current approach)
+# 2. Re-enable this workflow and disable the default setup in GitHub repository settings
