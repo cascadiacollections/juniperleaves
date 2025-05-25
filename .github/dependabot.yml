@@ -8,8 +8,6 @@ updates:
     open-pull-requests-limit: 10
     assignees:
       - "KevinTCoughlin"
-    reviewers:
-      - "KevinTCoughlin"
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
@@ -17,6 +15,4 @@ updates:
     schedule:
       interval: "monthly"
     assignees:
-      - "KevinTCoughlin"
-    reviewers:
       - "KevinTCoughlin"

@@ -1,0 +1,10 @@
+# CODEOWNERS file for Dependabot PR reviews
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# npm dependencies (package.json, package-lock.json, yarn.lock)
+package.json @KevinTCoughlin
+package-lock.json @KevinTCoughlin
+yarn.lock @KevinTCoughlin
+
+# GitHub Actions workflows
+.github/workflows/* @KevinTCoughlin
