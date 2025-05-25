@@ -38,14 +38,23 @@ function createWebpackConfig({ production }) {
       ]
     },
     entry: {
-      app: path.join(__dirname, 'lib', 'index.js'),
-
-      // Put these libraries in a separate vendor bundle
-      vendor: ['react', 'react-dom']
+      app: path.join(__dirname, 'lib', 'index.js')
+    },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            name: 'vendor',
+            chunks: 'all',
+          }
+        }
+      }
     },
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: '[name]_[contenthash].js'
+      filename: '[name]_[contenthash].js',
+      clean: true
     },
     performance: {
       // This specifies the bundle size limit that will trigger Webpack's warning saying:
@@ -54,7 +63,8 @@ function createWebpackConfig({ production }) {
       maxAssetSize: 250000
     },
     devServer: {
-      port: 9000
+      port: 9000,
+      static: path.join(__dirname, 'dist')
     },
     devtool: production ? undefined : 'source-map',
     plugins: [
