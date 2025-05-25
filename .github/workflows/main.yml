@@ -3,16 +3,17 @@ name: Build CI
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ master, main ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [20.x, 23.x, 24.x]
+      fail-fast: false
 
     steps:
     - uses: actions/checkout@v4
@@ -20,5 +21,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install
-    - run: yarn build
+        cache: 'yarn'
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+    - name: Build
+      run: yarn build
+      env:
+        NODE_OPTIONS: '--openssl-legacy-provider'
