@@ -54,8 +54,8 @@ jobs:
     - name: Install dependencies
       run: yarn install --frozen-lockfile
       
-    - name: Build project
-      run: yarn build
+    - name: Build project for CI
+      run: yarn build:ci
       env:
         NODE_OPTIONS: '--openssl-legacy-provider'
 
