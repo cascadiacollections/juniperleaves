@@ -17,7 +17,7 @@
     "node-sass": "npm:sass@^1.38.0"
   },
   "devDependencies": {
-    "@microsoft/rush-stack-compiler-4.2": "^0.1.1",
+    "@microsoft/rush-stack-compiler-4.2": "^0.3.2",
     "@rushstack/eslint-config": "^2.6.2",
     "@rushstack/heft": "^0.36.3",
     "@rushstack/heft-web-rig": "^0.4.4",
