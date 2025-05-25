@@ -41,7 +41,7 @@
     "webpack": "^4.44.2"
   },
   "dependencies": {
-    "@microsoft/load-themed-styles": "1.10.203",
+    "@microsoft/load-themed-styles": "2.1.6",
     "preact": "10.26.7"
   }
 }
