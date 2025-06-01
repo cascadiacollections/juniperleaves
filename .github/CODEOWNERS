@@ -8,3 +8,6 @@ yarn.lock @KevinTCoughlin
 
 # GitHub Actions workflows
 .github/workflows/* @KevinTCoughlin
+
+# Docker dependencies
+.devcontainer/* @KevinTCoughlin
