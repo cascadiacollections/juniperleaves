@@ -1,26 +1,129 @@
 {
+    // File handling
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.eol": "\n",
+    
+    // Editor settings
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
     },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.inlineSuggest.enabled": true,
+    
+    // Language-specific settings
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.wordWrap": "on"
+    },
+    
+    // ESLint settings
     "eslint.validate": [
         "javascript",
         "javascriptreact",
         "typescript",
         "typescriptreact"
     ],
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    
+    // TypeScript settings
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.suggest.autoImports": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    
+    // Spell checker
     "cSpell.words": [
-        "paypal"
+        "paypal",
+        "cascadiacollections",
+        "juniperleaves",
+        "heft",
+        "rushstack",
+        "bandana",
+        "bandanas"
     ],
+    
+    // Search and file explorer
     "search.exclude": {
         "**/node_modules": true,
         "**/dist": true,
-        "**/lib": true
+        "**/lib": true,
+        "**/.git": true,
+        "**/yarn.lock": true,
+        "**/package-lock.json": true
     },
-    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.exclude": {
+        "**/lib": true,
+        "**/dist": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/lib/**": true
+    },
+    
+    // Git settings
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.suggestSmartCommit": false,
+    
+    // Terminal settings
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash"
+        }
+    },
+    
+    // Security and privacy
+    "telemetry.telemetryLevel": "off",
+    "update.showReleaseNotes": false,
+    
+    // Performance settings
+    "extensions.ignoreRecommendations": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    
+    // Theme customizations (keeping existing brand colors)
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#557260",
         "activityBar.activeBorder": "#3291B1",
@@ -37,5 +140,5 @@
         "titleBar.inactiveBackground": "#e7e7e799",
         "titleBar.inactiveForeground": "#e7e7e799",
         "statusBarItem.remoteBackground": "#e7e7e799"
-      }
+    }
 }

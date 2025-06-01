@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "name": "Juniper Leaves",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.env.example": "properties",
+      "*.env.local": "properties",
+      "*.env.development": "properties",
+      "*.env.production": "properties"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "ms-vscode.vscode-typescript-next",
+      "streetsidesoftware.code-spell-checker",
+      "ms-vscode-remote.remote-containers",
+      "github.copilot",
+      "github.copilot-chat"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🤝 Community Support
+    url: https://github.com/cascadiacollections/juniperleaves/discussions
+    about: Ask questions and discuss with the community
+  - name: 📧 Contact Maintainer
+    url: mailto:kevin@cascadiacollections.com
+    about: Send an email to the project maintainer

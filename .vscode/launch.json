@@ -6,7 +6,47 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:9000",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}",
+            "presentation": {
+                "group": "Development",
+                "order": 1
+            },
+            "trace": true,
+            "userDataDir": "${workspaceFolder}/.vscode/chrome-user-data"
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}",
+            "presentation": {
+                "group": "Development",
+                "order": 2
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Node Script",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "presentation": {
+                "group": "Debug",
+                "order": 1
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Development Environment",
+            "configurations": ["Launch Chrome against localhost"],
+            "preLaunchTask": "Start Development Server",
+            "presentation": {
+                "group": "Compound",
+                "order": 1
+            }
         }
     ]
 }
