@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@microsoft/rush-stack-compiler-4.2": "^0.3.2",
-    "@rushstack/eslint-config": "^4.3.0",
+    "@rushstack/eslint-config": "^4.4.0",
     "@rushstack/heft": "^0.61.1",
     "@rushstack/heft-web-rig": "^0.19.1",
     "@rushstack/heft-webpack5-plugin": "^0.11.34",
