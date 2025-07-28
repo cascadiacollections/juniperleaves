@@ -845,10 +845,10 @@
     source-map "~0.6.1"
     typescript "~4.2.4"
 
-"@microsoft/load-themed-styles@2.1.7":
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-2.1.7.tgz#ffb52795b89a4b44aea2119c96b5ffa2898fcf96"
-  integrity sha512-MpAVV3Zv12GjXUH+U39eda3tOVafmMrR8aM7Cz6G8zRHyTMTu2J+l8ZcAIGipLVfvDV4r7r/zJ+km0yniCOg9g==
+"@microsoft/load-themed-styles@2.1.8":
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-2.1.8.tgz#f2779899a118ee19e62864be3f5af51d5135cf19"
+  integrity sha512-agDMyXxH/fdd8PgGcUFe4ostLd2bCvgrTy9v65oDWOHCtJIAOe6JY1QsQ526KGOlQQG1tKXZ6p2ppFQiZcBpzQ==
 
 "@microsoft/rush-stack-compiler-4.2@^0.3.2":
   version "0.3.2"
