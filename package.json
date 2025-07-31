@@ -21,7 +21,7 @@
     "@rushstack/eslint-config": "^4.4.0",
     "@rushstack/heft": "^0.61.1",
     "@rushstack/heft-web-rig": "^0.19.1",
-    "@rushstack/heft-webpack5-plugin": "^0.11.34",
+    "@rushstack/heft-webpack5-plugin": "^0.11.36",
     "@types/heft-jest": "1.0.6",
     "@types/node": "24.1.0",
     "@types/react": "19.1.9",
