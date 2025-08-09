@@ -1025,10 +1025,10 @@
     node-forge "~1.3.1"
     sudo "~1.0.3"
 
-"@rushstack/debug-certificate-manager@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.5.1.tgz#458e31c7c4ce5a726fd069281cd3a7136ea4f95a"
-  integrity sha512-ejwN5OrB+Czj1MJSaoSaJ6/lV5rzEQ3HFcbgzWSQvT/WR+aRksp+YPZz8mXp5Fj0V9LfMW3oMk/AdVXT+OkXjA==
+"@rushstack/debug-certificate-manager@1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.5.2.tgz#94ac785328c351c99bc87e8a810f5d32d869f05e"
+  integrity sha512-Scjk9rZIfcm4qjTDMjuFqBEMZRpdjKy6fkAmTBXJhzhU6eyL78flHVORhqg+w2X2gc/2vBGY+4ij4hpKIcnsjg==
   dependencies:
     "@rushstack/node-core-library" "5.14.0"
     "@rushstack/terminal" "0.15.4"
@@ -1282,12 +1282,12 @@
     watchpack "2.4.0"
     webpack-dev-server "~4.9.3"
 
-"@rushstack/heft-webpack5-plugin@^0.11.36":
-  version "0.11.36"
-  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-0.11.36.tgz#aafc6e1e6124e58eee57bdaa5b0b8d0863e558c5"
-  integrity sha512-4Oxnfuy/fV8NXqP2hf9yMwpANilnmaas1X/xHAOat8bNBDuTen3TtT89IQKIxMMIcDLTjBEM+i4ELi5e8IWFbg==
+"@rushstack/heft-webpack5-plugin@^0.11.37":
+  version "0.11.37"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-0.11.37.tgz#24f77534f572205047a39308c458ee299c1d81d3"
+  integrity sha512-tJvH3aH3TuziB+3/5vAZacHbuluN59QO1phz4pww+flsFIFpAYYq6QtcQgOkABk+MxiyMd2tCoARpxHtv1FDfg==
   dependencies:
-    "@rushstack/debug-certificate-manager" "1.5.1"
+    "@rushstack/debug-certificate-manager" "1.5.2"
     "@rushstack/node-core-library" "5.14.0"
     "@types/tapable" "1.0.6"
     tapable "1.1.3"
