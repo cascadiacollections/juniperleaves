@@ -23,7 +23,7 @@
     "@rushstack/heft-web-rig": "^0.19.1",
     "@rushstack/heft-webpack5-plugin": "^0.11.40",
     "@types/heft-jest": "1.0.6",
-    "@types/node": "24.3.0",
+    "@types/node": "24.3.1",
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
     "@types/webpack-env": "1.18.8",
