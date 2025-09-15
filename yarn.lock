@@ -1025,13 +1025,13 @@
     node-forge "~1.3.1"
     sudo "~1.0.3"
 
-"@rushstack/debug-certificate-manager@1.5.5":
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.5.5.tgz#e3da7cf73ba5a5f86607a9610d23c40b99b04430"
-  integrity sha512-Mj507+HDRTA7L2odrx0YzC/Nqa3k7PDsH49x2E6jJ1daUNOA2uL9t329zWteoryiBnpqHWIAh2SWZaD5EPXiKg==
+"@rushstack/debug-certificate-manager@1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.5.7.tgz#5df1f552348429f16b04e8f72d094afaceae0590"
+  integrity sha512-t3YAgOGaNLJ2DsqhJYWhN4ukkD71SOWvtTOsJYZJFn2O4bIGgleXw7g5RmPQAvlPyIzh45OuMjn+ySHjRi1Ssg==
   dependencies:
     "@rushstack/node-core-library" "5.14.0"
-    "@rushstack/terminal" "0.15.4"
+    "@rushstack/terminal" "0.16.0"
     node-forge "~1.3.1"
 
 "@rushstack/eslint-config@3.4.0":
@@ -1282,12 +1282,12 @@
     watchpack "2.4.0"
     webpack-dev-server "~4.9.3"
 
-"@rushstack/heft-webpack5-plugin@^0.11.40":
-  version "0.11.40"
-  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-0.11.40.tgz#6bb8c6c8f2b6772a1b4d16bd6428be339e4382a3"
-  integrity sha512-iDcyl7oiGRc/E94+KypEKkEk+rp9pVBpFV+6UzWnyfKeKVXbs+PHgWa0WnHvDsfeT/cXqN6LZcAa5VilcUsZgg==
+"@rushstack/heft-webpack5-plugin@^0.11.42":
+  version "0.11.42"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-0.11.42.tgz#9730b45d5dee5b4156a832547023f254f3da2d83"
+  integrity sha512-m+cmCi/CFizPYmnD3ziQyFUmgFiqgshe48L7M/TReyoUPaqXwaK633E+3O+e5ygBj/M1eImccY+cny4Z/yfzNQ==
   dependencies:
-    "@rushstack/debug-certificate-manager" "1.5.5"
+    "@rushstack/debug-certificate-manager" "1.5.7"
     "@rushstack/node-core-library" "5.14.0"
     "@types/tapable" "1.0.6"
     tapable "1.1.3"
@@ -1393,10 +1393,10 @@
     resolve "~1.22.1"
     strip-json-comments "~3.1.1"
 
-"@rushstack/terminal@0.15.4":
-  version "0.15.4"
-  resolved "https://registry.yarnpkg.com/@rushstack/terminal/-/terminal-0.15.4.tgz#ca84c117a7167407a1d65ae164c5991376ea5101"
-  integrity sha512-OQSThV0itlwVNHV6thoXiAYZlQh4Fgvie2CzxFABsbO2MWQsI4zOh3LRNigYSTrmS+ba2j0B3EObakPzf/x6Zg==
+"@rushstack/terminal@0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/terminal/-/terminal-0.16.0.tgz#4d2e7ce147a39c1e3d836e3b7fc422c15e625a30"
+  integrity sha512-WEvNuKkoR1PXorr9SxO0dqFdSp1BA+xzDrIm/Bwlc5YHg2FFg6oS+uCTYjerOhFuqCW+A3vKBm6EmKWSHfgx/A==
   dependencies:
     "@rushstack/node-core-library" "5.14.0"
     supports-color "~8.1.1"
