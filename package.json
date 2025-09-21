@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "@microsoft/load-themed-styles": "2.1.10",
-    "preact": "10.27.1"
+    "preact": "10.27.2"
   }
 }
