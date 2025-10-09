@@ -1027,13 +1027,13 @@
     node-forge "~1.3.1"
     sudo "~1.0.3"
 
-"@rushstack/debug-certificate-manager@1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.5.7.tgz#5df1f552348429f16b04e8f72d094afaceae0590"
-  integrity sha512-t3YAgOGaNLJ2DsqhJYWhN4ukkD71SOWvtTOsJYZJFn2O4bIGgleXw7g5RmPQAvlPyIzh45OuMjn+ySHjRi1Ssg==
+"@rushstack/debug-certificate-manager@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/debug-certificate-manager/-/debug-certificate-manager-1.6.1.tgz#0f7ce1835a5ef003e672ec03c839f4ddadc06a78"
+  integrity sha512-BfK/04qxPtk4MeqnIa/CX8LHChxzEI4dkrm8HeBoyfQajBijfU3BLt4VTb54WE/EhA1TXiGvGbvrhlkI0NdchQ==
   dependencies:
-    "@rushstack/node-core-library" "5.14.0"
-    "@rushstack/terminal" "0.16.0"
+    "@rushstack/node-core-library" "5.17.0"
+    "@rushstack/terminal" "0.19.1"
     node-forge "~1.3.1"
 
 "@rushstack/eslint-config@3.4.0":
@@ -1284,13 +1284,13 @@
     watchpack "2.4.0"
     webpack-dev-server "~4.9.3"
 
-"@rushstack/heft-webpack5-plugin@^0.11.42":
-  version "0.11.42"
-  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-0.11.42.tgz#9730b45d5dee5b4156a832547023f254f3da2d83"
-  integrity sha512-m+cmCi/CFizPYmnD3ziQyFUmgFiqgshe48L7M/TReyoUPaqXwaK633E+3O+e5ygBj/M1eImccY+cny4Z/yfzNQ==
+"@rushstack/heft-webpack5-plugin@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-1.2.0.tgz#9a93eeec0cbfc3c70d081684117e23a2f5627564"
+  integrity sha512-rZvM3kc00/ua380+nIcmE0KepmunD491pjeIp6BbJodIOsli+j7XRAtTrDg+8Lk9Q4XIjoX7dMyF/g7NZpyUwg==
   dependencies:
-    "@rushstack/debug-certificate-manager" "1.5.7"
-    "@rushstack/node-core-library" "5.14.0"
+    "@rushstack/debug-certificate-manager" "1.6.1"
+    "@rushstack/node-core-library" "5.17.0"
     "@types/tapable" "1.0.6"
     tapable "1.1.3"
     watchpack "2.4.0"
@@ -1344,10 +1344,10 @@
     semver "~7.5.4"
     z-schema "~5.0.2"
 
-"@rushstack/node-core-library@5.14.0":
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/node-core-library/-/node-core-library-5.14.0.tgz#4bd461e6e53c31e14170e3eeee057c63662b0d80"
-  integrity sha512-eRong84/rwQUlATGFW3TMTYVyqL1vfW9Lf10PH+mVGfIb9HzU3h5AASNIw+axnBLjnD0n3rT5uQBwu9fvzATrg==
+"@rushstack/node-core-library@5.17.0":
+  version "5.17.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/node-core-library/-/node-core-library-5.17.0.tgz#30b9c7b1fe01f79e6448d0433d163ef4d3b290c9"
+  integrity sha512-24vt1GbHN6kyIglRMTVpyEiNRRRJK8uZHc1XoGAhmnTDKnrWet8OmOpImMswJIe6gM78eV8cMg1HXwuUHkSSgg==
   dependencies:
     ajv "~8.13.0"
     ajv-draft-04 "~1.0.0"
@@ -1379,6 +1379,11 @@
   dependencies:
     "@rushstack/node-core-library" "3.60.1"
 
+"@rushstack/problem-matcher@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/problem-matcher/-/problem-matcher-0.1.1.tgz#db9303ef3c47010c8aba5841e8c9511e091159df"
+  integrity sha512-Fm5XtS7+G8HLcJHCWpES5VmeMyjAKaWeyZU5qPzZC+22mPlJzAsOxymHiWIfuirtPckX3aptWws+K2d0BzniJA==
+
 "@rushstack/rig-package@0.2.12":
   version "0.2.12"
   resolved "https://registry.yarnpkg.com/@rushstack/rig-package/-/rig-package-0.2.12.tgz#c434d62b28e0418a040938226f8913971d0424c7"
@@ -1395,12 +1400,13 @@
     resolve "~1.22.1"
     strip-json-comments "~3.1.1"
 
-"@rushstack/terminal@0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/terminal/-/terminal-0.16.0.tgz#4d2e7ce147a39c1e3d836e3b7fc422c15e625a30"
-  integrity sha512-WEvNuKkoR1PXorr9SxO0dqFdSp1BA+xzDrIm/Bwlc5YHg2FFg6oS+uCTYjerOhFuqCW+A3vKBm6EmKWSHfgx/A==
+"@rushstack/terminal@0.19.1":
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/terminal/-/terminal-0.19.1.tgz#56969818ee6511b4607a230db343cf0602c7389e"
+  integrity sha512-jsBuSad67IDVMO2yp0hDfs0OdE4z3mDIjIL2pclDT3aEJboeZXE85e1HjuD0F6JoW3XgHvDwoX+WOV+AVTDQeA==
   dependencies:
-    "@rushstack/node-core-library" "5.14.0"
+    "@rushstack/node-core-library" "5.17.0"
+    "@rushstack/problem-matcher" "0.1.1"
     supports-color "~8.1.1"
 
 "@rushstack/tree-pattern@0.2.4":
