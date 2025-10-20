@@ -1284,10 +1284,10 @@
     watchpack "2.4.0"
     webpack-dev-server "~4.9.3"
 
-"@rushstack/heft-webpack5-plugin@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-1.2.0.tgz#9a93eeec0cbfc3c70d081684117e23a2f5627564"
-  integrity sha512-rZvM3kc00/ua380+nIcmE0KepmunD491pjeIp6BbJodIOsli+j7XRAtTrDg+8Lk9Q4XIjoX7dMyF/g7NZpyUwg==
+"@rushstack/heft-webpack5-plugin@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/heft-webpack5-plugin/-/heft-webpack5-plugin-1.2.1.tgz#d8bb463fbbd5f6cceebaf4f8422dd29c6726e334"
+  integrity sha512-CCdnfQGekpMAXmcRWTCeP587wz/YmDLqnu8+ad2NeRUbWfQBRkVGcKN65c9UCo5d9qDa3J2gPU3nV6/mC+Jiow==
   dependencies:
     "@rushstack/debug-certificate-manager" "1.6.1"
     "@rushstack/node-core-library" "5.17.0"
