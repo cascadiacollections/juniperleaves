@@ -1047,12 +1047,29 @@
     "@rushstack/terminal" "0.19.2"
     node-forge "~1.3.1"
 
-"@rushstack/eslint-config@4.5.2", "@rushstack/eslint-config@^4.5.0":
+"@rushstack/eslint-config@4.5.2":
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.5.2.tgz#ca0919b910296ef506865a7c5f54c220d227792f"
   integrity sha512-EK5qullXxMevGRwUiJAoVlK6eKCw9JiLunUWzuNsRD53DiIjC6dP6BTSg0D2tzh3uNsV+yOH3mrja+dGwWpiaw==
   dependencies:
     "@rushstack/eslint-patch" "1.14.0"
+    "@rushstack/eslint-plugin" "0.22.0"
+    "@rushstack/eslint-plugin-packlets" "0.14.0"
+    "@rushstack/eslint-plugin-security" "0.13.0"
+    "@typescript-eslint/eslint-plugin" "~8.46.0"
+    "@typescript-eslint/parser" "~8.46.0"
+    "@typescript-eslint/typescript-estree" "~8.46.0"
+    "@typescript-eslint/utils" "~8.46.0"
+    eslint-plugin-promise "~7.2.1"
+    eslint-plugin-react "~7.37.5"
+    eslint-plugin-tsdoc "~0.4.0"
+
+"@rushstack/eslint-config@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.5.3.tgz#5a0713fccf452de8ba8815bd0cc8dcd08d3fdf87"
+  integrity sha512-pKcN99fZLhOgjYS6LAwUGlsUauUeaPS/4GHpkagvXO+iogz+ATL2CvfOt25hpI93YIxpU80YggmI1OFVd2iTiw==
+  dependencies:
+    "@rushstack/eslint-patch" "1.14.1"
     "@rushstack/eslint-plugin" "0.22.0"
     "@rushstack/eslint-plugin-packlets" "0.14.0"
     "@rushstack/eslint-plugin-security" "0.13.0"
@@ -1090,6 +1107,11 @@
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.14.0.tgz#61b05741089552a3d352b3503d6a242978a2cb08"
   integrity sha512-WJFej426qe4RWOm9MMtP4V3CV4AucXolQty+GRgAWLgQXmpCuwzs7hEpxxhSc/znXUSxum9d/P/32MW0FlAAlA==
+
+"@rushstack/eslint-patch@1.14.1":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.14.1.tgz#5f7c5c335643cff62ad8e6a9432d708a9c51e98c"
+  integrity sha512-jGTk8UD/RdjsNZW8qq10r0RBvxL8OWtoT+kImlzPDFilmozzM+9QmIJsmze9UiSBrFU45ZxhTYBypn9q9z/VfQ==
 
 "@rushstack/eslint-plugin-packlets@0.14.0":
   version "0.14.0"
