@@ -905,6 +905,16 @@
     jju "~1.4.0"
     resolve "~1.22.2"
 
+"@microsoft/tsdoc-config@0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.18.0.tgz#02fd9924b888053ecbc3c0385a24532bf2106c98"
+  integrity sha512-8N/vClYyfOH+l4fLkkr9+myAoR6M7akc8ntBJ4DJdWH2b09uVfr71+LTMpNyG19fNqWDg8KEDZhx5wxuqHyGjw==
+  dependencies:
+    "@microsoft/tsdoc" "0.16.0"
+    ajv "~8.12.0"
+    jju "~1.4.0"
+    resolve "~1.22.2"
+
 "@microsoft/tsdoc-config@~0.15.2":
   version "0.15.2"
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc-config/-/tsdoc-config-0.15.2.tgz#eb353c93f3b62ab74bdc9ab6f4a82bcf80140f14"
@@ -929,6 +939,11 @@
   version "0.15.1"
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.15.1.tgz#d4f6937353bc4568292654efb0a0e0532adbcba2"
   integrity sha512-4aErSrCR/On/e5G2hDP0wjooqDdauzEbIq8hIkIe5pXV0rtWJZvdCEKL0ykZxex+IxIwBp0eGeV48hQN07dXtw==
+
+"@microsoft/tsdoc@0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.16.0.tgz#2249090633e04063176863a050c8f0808d2b6d2b"
+  integrity sha512-xgAyonlVVS+q7Vc7qLW0UrJU7rSFcETRWsqdXZtjzRU8dF+6CkozTK4V4y1LwOX7j8r/vHphjDeMeGI4tNGeGA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1071,13 +1086,13 @@
     eslint-plugin-react "~7.37.5"
     eslint-plugin-tsdoc "~0.4.0"
 
-"@rushstack/eslint-config@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.5.3.tgz#5a0713fccf452de8ba8815bd0cc8dcd08d3fdf87"
-  integrity sha512-pKcN99fZLhOgjYS6LAwUGlsUauUeaPS/4GHpkagvXO+iogz+ATL2CvfOt25hpI93YIxpU80YggmI1OFVd2iTiw==
+"@rushstack/eslint-config@^4.6.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.6.1.tgz#07166e1026fce69901f5fd5546f10433cacaca37"
+  integrity sha512-LysvSmBjHK8yqp9dtlafYoetNFsYEkYxsAaGYKxzclwXWpeaPgi/EYJtpReFBCsWTR12wxgCDICrDgMUjgynVg==
   dependencies:
-    "@rushstack/eslint-patch" "1.14.1"
-    "@rushstack/eslint-plugin" "0.22.0"
+    "@rushstack/eslint-patch" "1.15.0"
+    "@rushstack/eslint-plugin" "0.22.1"
     "@rushstack/eslint-plugin-packlets" "0.14.0"
     "@rushstack/eslint-plugin-security" "0.13.0"
     "@typescript-eslint/eslint-plugin" "~8.46.0"
@@ -1086,7 +1101,7 @@
     "@typescript-eslint/utils" "~8.46.0"
     eslint-plugin-promise "~7.2.1"
     eslint-plugin-react "~7.37.5"
-    eslint-plugin-tsdoc "~0.4.0"
+    eslint-plugin-tsdoc "~0.5.0"
 
 "@rushstack/eslint-config@~2.6.2":
   version "2.6.2"
@@ -1115,10 +1130,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.14.0.tgz#61b05741089552a3d352b3503d6a242978a2cb08"
   integrity sha512-WJFej426qe4RWOm9MMtP4V3CV4AucXolQty+GRgAWLgQXmpCuwzs7hEpxxhSc/znXUSxum9d/P/32MW0FlAAlA==
 
-"@rushstack/eslint-patch@1.14.1":
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.14.1.tgz#5f7c5c335643cff62ad8e6a9432d708a9c51e98c"
-  integrity sha512-jGTk8UD/RdjsNZW8qq10r0RBvxL8OWtoT+kImlzPDFilmozzM+9QmIJsmze9UiSBrFU45ZxhTYBypn9q9z/VfQ==
+"@rushstack/eslint-patch@1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.15.0.tgz#8184bcb37791e6d3c3c13a9bfbe4af263f66665f"
+  integrity sha512-ojSshQPKwVvSMR8yT2L/QtUkV5SXi/IfDiJ4/8d6UbTPjiHVmxZzUAzGD8Tzks1b9+qQkZa0isUOvYObedITaw==
 
 "@rushstack/eslint-plugin-packlets@0.14.0":
   version "0.14.0"
@@ -1156,6 +1171,14 @@
   version "0.22.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.22.0.tgz#6c121621f43dc42260faef3bd01599d7d8c24c81"
   integrity sha512-2x1fJQnV6H0O2kZho0/+miOQaYwGIG3yk+vS2EeUqii0OE4ZbEk9ad9ec6duDuxgx77V/nPHkrd4ftB4Twubmg==
+  dependencies:
+    "@rushstack/tree-pattern" "0.3.4"
+    "@typescript-eslint/utils" "~8.46.0"
+
+"@rushstack/eslint-plugin@0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.22.1.tgz#e015f08b919763065881bd1275fbbc09d425ea93"
+  integrity sha512-j2bVPgddSBs0iPed2l40Ssa/bmKr6YkaI3jv7Z1fH2Zlu/RcpgFOZWH0ls8ZQEqaA63A3oRmVXxnmmX/7FJb8w==
   dependencies:
     "@rushstack/tree-pattern" "0.3.4"
     "@typescript-eslint/utils" "~8.46.0"
@@ -3601,6 +3624,15 @@ eslint-plugin-tsdoc@~0.4.0:
   dependencies:
     "@microsoft/tsdoc" "0.15.1"
     "@microsoft/tsdoc-config" "0.17.1"
+
+eslint-plugin-tsdoc@~0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tsdoc/-/eslint-plugin-tsdoc-0.5.0.tgz#57c66ea0d8eb3947b3ce9677c6504d2fa16908a0"
+  integrity sha512-ush8ehCwub2rgE16OIgQPFyj/o0k3T8kL++9IrAI4knsmupNo8gvfO2ERgDHWWgTC5MglbwLVRswU93HyXqNpw==
+  dependencies:
+    "@microsoft/tsdoc" "0.16.0"
+    "@microsoft/tsdoc-config" "0.18.0"
+    "@typescript-eslint/utils" "~8.46.0"
 
 eslint-scope@5.1.1, eslint-scope@^5.1.1:
   version "5.1.1"
