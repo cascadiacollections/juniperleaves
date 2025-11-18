@@ -25,7 +25,7 @@
     "@types/heft-jest": "1.0.6",
     "@types/node": "24.10.1",
     "@types/react": "19.2.6",
-    "@types/react-dom": "19.2.2",
+    "@types/react-dom": "19.2.3",
     "@types/webpack-env": "1.18.8",
     "css-loader": "^7.1.2",
     "eslint": "^9.39.1",
