@@ -39,7 +39,7 @@
     "style-loader": "^4.0.0",
     "typescript": "^5.9.3",
     "webpack": "~5.104.1",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
     "@microsoft/load-themed-styles": "2.1.22",
