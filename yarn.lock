@@ -1214,15 +1214,15 @@
     eslint-plugin-react "~7.37.5"
     eslint-plugin-tsdoc "~0.4.0"
 
-"@rushstack/eslint-config@^4.6.1":
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.6.1.tgz#07166e1026fce69901f5fd5546f10433cacaca37"
-  integrity sha512-LysvSmBjHK8yqp9dtlafYoetNFsYEkYxsAaGYKxzclwXWpeaPgi/EYJtpReFBCsWTR12wxgCDICrDgMUjgynVg==
+"@rushstack/eslint-config@^4.6.3":
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.6.3.tgz#4d7bf76245cdcb3990e51237d26730a1e6c89ecb"
+  integrity sha512-swmWnmKGkYIfYFyOb9HPLl7uoT1v4inLi+hNx1MBlzBxOzgVQmcRcgG7be9YN4IFXhg26GAdg70vfsCsidz1gQ==
   dependencies:
-    "@rushstack/eslint-patch" "1.15.0"
-    "@rushstack/eslint-plugin" "0.22.1"
-    "@rushstack/eslint-plugin-packlets" "0.14.0"
-    "@rushstack/eslint-plugin-security" "0.13.0"
+    "@rushstack/eslint-patch" "1.16.1"
+    "@rushstack/eslint-plugin" "0.23.1"
+    "@rushstack/eslint-plugin-packlets" "0.15.1"
+    "@rushstack/eslint-plugin-security" "0.14.1"
     "@typescript-eslint/eslint-plugin" "~8.46.0"
     "@typescript-eslint/parser" "~8.46.0"
     "@typescript-eslint/typescript-estree" "~8.46.0"
@@ -1258,10 +1258,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.14.0.tgz#61b05741089552a3d352b3503d6a242978a2cb08"
   integrity sha512-WJFej426qe4RWOm9MMtP4V3CV4AucXolQty+GRgAWLgQXmpCuwzs7hEpxxhSc/znXUSxum9d/P/32MW0FlAAlA==
 
-"@rushstack/eslint-patch@1.15.0":
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.15.0.tgz#8184bcb37791e6d3c3c13a9bfbe4af263f66665f"
-  integrity sha512-ojSshQPKwVvSMR8yT2L/QtUkV5SXi/IfDiJ4/8d6UbTPjiHVmxZzUAzGD8Tzks1b9+qQkZa0isUOvYObedITaw==
+"@rushstack/eslint-patch@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.16.1.tgz#4f97581e114fc79f246cee3723a5c4edd3b62415"
+  integrity sha512-TvZbIpeKqGQQ7X0zSCvPH9riMSFQFSggnfBjFZ1mEoILW+UuXCKwOoPcgjMwiUtRqFZ8jWhPJc4um14vC6I4ag==
 
 "@rushstack/eslint-plugin-packlets@0.14.0":
   version "0.14.0"
@@ -1269,6 +1269,14 @@
   integrity sha512-o1udsL8lPAVmNEfjUOAoBcOATVs9RpFY6D/Lv2jfQ3ZqpmuDiNb4mNdB9AkI8I/01viyrIWz/iq08p31q/EIZg==
   dependencies:
     "@rushstack/tree-pattern" "0.3.4"
+    "@typescript-eslint/utils" "~8.46.0"
+
+"@rushstack/eslint-plugin-packlets@0.15.1":
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin-packlets/-/eslint-plugin-packlets-0.15.1.tgz#c119abf0e53a0d7f00fa9b69ac9e9e663b1167ad"
+  integrity sha512-mr0TS5PjXJv3OE/c5RYArtm/F0+HYO8C6Vg2XVw4OzvRHXtyLuEWFPpCpAyRyioHSNMmnbmKrmKbU80CMMaSZQ==
+  dependencies:
+    "@rushstack/tree-pattern" "0.4.1"
     "@typescript-eslint/utils" "~8.46.0"
 
 "@rushstack/eslint-plugin-packlets@0.4.1":
@@ -1287,6 +1295,14 @@
     "@rushstack/tree-pattern" "0.3.4"
     "@typescript-eslint/utils" "~8.46.0"
 
+"@rushstack/eslint-plugin-security@0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin-security/-/eslint-plugin-security-0.14.1.tgz#a4510af077bd0d3a6687c692447b183730f404b9"
+  integrity sha512-Dy9tuIE45Dd9Xg7P91X625gUggHDcdk3u7txqeLhezyS65tvkIY9nTKr/ORqzUbJIdjLQ3lB2gTWY4VcKegZIQ==
+  dependencies:
+    "@rushstack/tree-pattern" "0.4.1"
+    "@typescript-eslint/utils" "~8.46.0"
+
 "@rushstack/eslint-plugin-security@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin-security/-/eslint-plugin-security-0.3.1.tgz#78c00056d2e7d56f5cfafd305ce1195260da7e0e"
@@ -1303,12 +1319,12 @@
     "@rushstack/tree-pattern" "0.3.4"
     "@typescript-eslint/utils" "~8.46.0"
 
-"@rushstack/eslint-plugin@0.22.1":
-  version "0.22.1"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.22.1.tgz#e015f08b919763065881bd1275fbbc09d425ea93"
-  integrity sha512-j2bVPgddSBs0iPed2l40Ssa/bmKr6YkaI3jv7Z1fH2Zlu/RcpgFOZWH0ls8ZQEqaA63A3oRmVXxnmmX/7FJb8w==
+"@rushstack/eslint-plugin@0.23.1":
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.23.1.tgz#c7276119742494eb36e6faeb3a10cd4331467133"
+  integrity sha512-iOdzErUG4n9zVXX9Fa0RFkVml4BT1i8roSFbRb31lUyWUpYsKmjy2Z+q5TOiE1L+V7/8MdShqN3wMgrkh8SeKA==
   dependencies:
-    "@rushstack/tree-pattern" "0.3.4"
+    "@rushstack/tree-pattern" "0.4.1"
     "@typescript-eslint/utils" "~8.46.0"
 
 "@rushstack/eslint-plugin@0.9.1":
@@ -1541,6 +1557,11 @@
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@rushstack/tree-pattern/-/tree-pattern-0.3.4.tgz#7f937f5cfc7c74dc483fff0634c2a84d24621c5c"
   integrity sha512-9uROnkiHWsQqxW6HirXABfTRlgzhYp6tevbYIGkwKQ09VaayUBkvFvt/urDKMwlo+tGU0iQQLuVige6c48wTgw==
+
+"@rushstack/tree-pattern@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@rushstack/tree-pattern/-/tree-pattern-0.4.1.tgz#71123adb342092c9dfbfdde031ff52b11dce431a"
+  integrity sha512-eFuLBUWUfWQ42u5i25qO1VpTOg6nW2PXaLVwpmjm5tHpPREht0k0L2jsYht8iVvQ732odEeVnkXVcf2nIwbGxA==
 
 "@rushstack/ts-command-line@4.7.10":
   version "4.7.10"
