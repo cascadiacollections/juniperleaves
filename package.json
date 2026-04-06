@@ -42,7 +42,7 @@
     "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
-    "@microsoft/load-themed-styles": "2.2.7",
+    "@microsoft/load-themed-styles": "2.2.10",
     "preact": "10.29.0"
   }
 }
