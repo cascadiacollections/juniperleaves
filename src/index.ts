@@ -67,7 +67,7 @@ const sizeInput = document.getElementById('order_size') as HTMLSelectElement;
 function getQuantity(): number {
   const quantity = Number(quantityInput.value);
 
-  if (!Number.isInteger(quantity) || quantity < 1 || quantity > 100) {
+  if (!isFinite(quantity) || Math.floor(quantity) !== quantity || quantity < 1 || quantity > 100) {
     throw new Error('Please select a quantity between 1 and 100.');
   }
 
