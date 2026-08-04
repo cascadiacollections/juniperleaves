@@ -31,6 +31,27 @@ function createWebpackConfig({ production }) {
           ],
         },
         {
+          test: /\.css$/i,
+          use: [
+            "style-loader",
+            "css-loader"
+          ]
+        },
+        {
+          test: /\.(?:ico|png|xml|txt|webmanifest|html)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: '[name][ext]'
+          }
+        },
+        {
+          test: /\.htaccess$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: '[name][ext]'
+          }
+        },
+        {
           test: /\.js$/,
           enforce: 'pre',
           use: ['source-map-loader']

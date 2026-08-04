@@ -22,7 +22,6 @@
       <link rel="apple-touch-icon" href="icon.png">
       <meta name="theme-color" content="#fafafa">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
-      <link rel="stylesheet" href="./site.css" />
     </head>
     <body>
         <h1>Juniper Leaves</h1>
@@ -35,11 +34,11 @@
               <span>$15.00</span><span>- Free shipping</span>
               <form>
                 <label for="order_size">Size:</label>
-                <select name="order_size">
-                  <option>X-Small</option>
-                  <option>Small</option>
-                  <option selected>Medium</option>
-                  <option>Large</option>
+                <select name="order_size" id="order_size">
+                  <option value="x-small">X-Small</option>
+                  <option value="small">Small</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="large">Large</option>
                 </select>
                 <label for="order_quantity">Quantity:</label>
                 <input type="number" value="1" name="order_quantity" id="order_quantity" min="1" max="100" step="1" />
@@ -57,6 +56,5 @@
             </div>
         </main>
         <script src="https://www.paypal.com/sdk/js?client-id=AbHVygC7CUXI8hfkfYhx_bqTttdq9yvXDpVluJ8SPpPeGPukIIC1ca80feCHJJqinIEXDM904Ursu7P2"></script>
-        <script src="./index.js"></script>
     </body>
 </html>
