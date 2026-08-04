@@ -38,14 +38,14 @@ function createWebpackConfig({ production }) {
           ]
         },
         {
-          test: /\.(?:ico|png|xml|txt|webmanifest|html)$/i,
+          test: /\.(?:ico|png|xml|txt|webmanifest)$/i,
           type: 'asset/resource',
           generator: {
             filename: '[name][ext]'
           }
         },
         {
-          test: /\.htaccess$/i,
+          test: /404\.html$/i,
           type: 'asset/resource',
           generator: {
             filename: '[name][ext]'

@@ -49,8 +49,10 @@ jobs:
         test -f dist/404.html
         test -f dist/site.webmanifest
         test -f dist/icon.png
-        test -f dist/site.css || test -n "$(find dist -maxdepth 1 -name 'app_*.js' -print -quit)"
-        test -n "$(find dist -maxdepth 1 -name 'app_*.js' -print -quit)"
+        bundle="$(find dist -maxdepth 1 -name 'app_*.js' -print -quit)"
+        test -n "$bundle"
+        grep -q "$(basename "$bundle")" dist/index.html
+        ! grep -q 'src="./index.js"' dist/index.html
 
     - name: Upload build artifacts
       if: matrix.node-version == '22.x'

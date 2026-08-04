@@ -8,7 +8,6 @@ import './robots.txt';
 import './site.webmanifest';
 import './tile-wide.png';
 import './tile.png';
-import './.htaccess';
 
 interface PayPalActions {
   order: {

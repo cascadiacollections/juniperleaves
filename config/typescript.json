@@ -9,6 +9,14 @@
   ],
 
   "staticAssetsToCopy": {
-    "fileExtensions": [".scss"]
+    "fileExtensions": [
+      ".css",
+      ".html",
+      ".ico",
+      ".png",
+      ".txt",
+      ".webmanifest",
+      ".xml"
+    ]
   }
 }
