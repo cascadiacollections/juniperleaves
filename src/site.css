@@ -5,6 +5,7 @@ h1 {
 
 .wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .wrapper > div {
@@ -23,4 +24,12 @@ main {
 
 img {
     border-radius: 4px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        flex-direction: column;
+    }
 }
