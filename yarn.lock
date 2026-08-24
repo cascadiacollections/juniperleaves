@@ -1413,13 +1413,13 @@
     eslint-plugin-react "~7.37.5"
     eslint-plugin-tsdoc "~0.4.0"
 
-"@rushstack/eslint-config@^4.6.4":
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.6.4.tgz#dd2082eb3869cb8fe702101495481f819c93ddb4"
-  integrity sha512-nMd5JxzOqkICanNf2He3xebU4txXT5IiQ6ovMeJt5Ou72J+DZzor2kfVGKfQi6uBR2fyhZGYBOahwxnduH2bbA==
+"@rushstack/eslint-config@^4.6.5":
+  version "4.6.5"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-config/-/eslint-config-4.6.5.tgz#b608523430d74f4871cbf598a4a8714d91b8cfb0"
+  integrity sha512-R5Dhh46fMnKWmwankbmLWtvfiisq4zaMTTDgkrroglz8UKsSP2Gpp9IJ5PFnDurKQ/X0IGp5H5vWUuDpJhNjQA==
   dependencies:
     "@rushstack/eslint-patch" "1.16.1"
-    "@rushstack/eslint-plugin" "0.23.2"
+    "@rushstack/eslint-plugin" "0.23.3"
     "@rushstack/eslint-plugin-packlets" "0.15.2"
     "@rushstack/eslint-plugin-security" "0.14.2"
     "@typescript-eslint/eslint-plugin" "~8.56.1"
@@ -1518,10 +1518,10 @@
     "@rushstack/tree-pattern" "0.3.4"
     "@typescript-eslint/utils" "~8.46.0"
 
-"@rushstack/eslint-plugin@0.23.2":
-  version "0.23.2"
-  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.23.2.tgz#76ad1187296187769b349943cc4b940a4d0b506a"
-  integrity sha512-yMvd/jW/gUZ2IdXaOD5mr+DBU0UUjNgsZ/aDrFfzijIPvqdjtMich0gR68VBxvZjciUDQX0Zm4rfezvkxv/bRQ==
+"@rushstack/eslint-plugin@0.23.3":
+  version "0.23.3"
+  resolved "https://registry.yarnpkg.com/@rushstack/eslint-plugin/-/eslint-plugin-0.23.3.tgz#edfefba4ec52b6d51699ef7bb53339ab079684ff"
+  integrity sha512-9C3l6zN/493xbiKU4by6X31RE0DSTeQl0uwjaGmr+dCXGPaF9FIK98lNF/UlCVFCavQr/DO0wmV5fUzbuPJybQ==
   dependencies:
     "@rushstack/tree-pattern" "0.4.1"
     "@typescript-eslint/utils" "~8.56.1"
