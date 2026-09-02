@@ -38,7 +38,7 @@
     "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0",
     "typescript": "^5.9.3",
-    "webpack": "~5.110.1",
+    "webpack": "~5.110.2",
     "webpack-dev-server": "^6.0.0"
   },
   "dependencies": {
