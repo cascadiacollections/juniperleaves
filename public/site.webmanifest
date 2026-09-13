@@ -1,0 +1,16 @@
+{
+  "short_name": "Juniper Leaves",
+  "name": "Juniper Leaves | Accessories for People and Pets",
+  "description": "Thoughtful accessories for people and pets from an independent Pacific Northwest maker.",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2eee3",
+  "theme_color": "#173b32"
+}

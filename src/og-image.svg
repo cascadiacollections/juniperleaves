@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#173b32"/>
+  <circle cx="942" cy="186" r="188" fill="#c9714b"/>
+  <g fill="#9aaa8f" stroke="#9aaa8f" stroke-linecap="round" stroke-width="12">
+    <path d="M1120 670C1012 495 1003 327 829 105" fill="none"/>
+    <path d="M990 380C916 348 858 346 786 355" fill="none"/>
+    <path d="M1034 473C1090 422 1122 372 1140 317" fill="none"/>
+    <ellipse cx="854" cy="350" rx="40" ry="91" transform="rotate(-75 854 350)"/>
+    <ellipse cx="1103" cy="376" rx="37" ry="87" transform="rotate(31 1103 376)"/>
+    <ellipse cx="873" cy="164" rx="35" ry="82" transform="rotate(-39 873 164)"/>
+  </g>
+  <circle cx="98" cy="92" r="31" fill="none" stroke="#f2eee3" stroke-width="2"/>
+  <text x="98" y="100" fill="#f2eee3" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">JL</text>
+  <text x="155" y="102" fill="#f2eee3" font-family="Georgia, serif" font-size="38">Juniper Leaves</text>
+  <text x="94" y="330" fill="#f2eee3" font-family="Georgia, serif" font-size="82">Thoughtful accessories,</text>
+  <text x="94" y="425" fill="#f2eee3" font-family="Georgia, serif" font-size="82">made with care.</text>
+  <text x="98" y="525" fill="#f2eee3" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="4">PACIFIC NORTHWEST · JUNIPERLEAVES.COM</text>
+</svg>

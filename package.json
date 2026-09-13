@@ -1,48 +1,29 @@
 {
   "name": "@cascadiacollections/juniperleaves",
   "version": "1.0.0",
-  "description": "www",
-  "main": "./lib/index.js",
+  "private": true,
+  "description": "Juniper Leaves storefront",
+  "type": "module",
   "repository": {
+    "type": "git",
     "url": "https://github.com/cascadiacollections/juniperleaves.git"
   },
   "scripts": {
-    "build": "heft run --to build",
-    "build:ci": "heft run --to build -- --production",
-    "start": "heft run-watch --to build"
+    "build": "vite build",
+    "check": "npm run typecheck && npm run build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "author": "Kevin T. Coughlin <kevin@cascadiacollections.com>",
   "license": "MIT",
-  "resolutions": {
-    "node-sass": "npm:sass@^1.38.0"
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
   },
+  "packageManager": "npm@11.17.0",
   "devDependencies": {
-    "@microsoft/rush-stack-compiler-4.2": "^0.3.2",
-    "@rushstack/eslint-config": "^4.6.5",
-    "@rushstack/heft": "^1.1.2",
-    "@rushstack/heft-web-rig": "^1.1.3",
-    "@rushstack/heft-webpack5-plugin": "^1.2.2",
-    "@types/heft-jest": "1.0.6",
-    "@types/node": "26.4.1",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.7",
-    "@types/webpack-env": "1.18.8",
-    "css-loader": "^7.1.5",
-    "eslint": "^9.39.2",
-    "html-webpack-plugin": "^5.6.8",
-    "node-notifier": "10.0.1",
-    "react": "~19.2.8",
-    "react-dom": "~19.2.8",
-    "sass": "^1.104.0",
-    "sass-loader": "^17.0.1",
-    "source-map-loader": "^5.0.0",
-    "style-loader": "^4.0.0",
-    "typescript": "^5.9.3",
-    "webpack": "~5.110.3",
-    "webpack-dev-server": "^6.0.0"
-  },
-  "dependencies": {
-    "@microsoft/load-themed-styles": "2.2.25",
-    "preact": "10.29.8"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
   }
 }
