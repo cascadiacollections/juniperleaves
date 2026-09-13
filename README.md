@@ -1,25 +1,33 @@
 # Juniper Leaves
 
 [![CI](https://github.com/cascadiacollections/juniperleaves/actions/workflows/main.yml/badge.svg)](https://github.com/cascadiacollections/juniperleaves/actions/workflows/main.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e9d4fdb0-2136-44bd-8cae-a9fa175fcad6/deploy-status)](https://app.netlify.com/sites/juniperleaves/deploys)
 
-Juniper Leaves shop web presence
+The Juniper Leaves storefront at [juniperleaves.com](https://juniperleaves.com/) directs customers to the [Juniper Leaves Etsy shop](https://www.etsy.com/shop/JuniperLeaves).
 
-## Local development
+## Requirements
 
-### Option 1: Traditional setup
+- Node.js 24
+- npm 11 or newer
 
-1. Clone the repo: `git clone https://github.com/cascadiacollections/juniperleaves.git`
-2. Install dependencies: `yarn install`
-3. Run local web server: `yarn start`
+The repository includes `.nvmrc` for Node version managers and a dev container with the same runtime.
 
-### Option 2: Dev Container
+## Development
 
-This project includes a dev container configuration that provides a consistent development environment.
+```sh
+npm ci
+npm run dev
+```
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/) and the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-2. Clone the repo: `git clone https://github.com/cascadiacollections/juniperleaves.git`
-3. Open the project in VS Code
-4. When prompted, click "Reopen in Container" or run the "Dev Containers: Reopen in Container" command
-5. The dev container will set up the environment and install dependencies automatically
-6. Run the local web server: `yarn start`
+Vite serves the site at [http://localhost:5173](http://localhost:5173).
+
+## Validation
+
+```sh
+npm run check
+```
+
+This type-checks the TypeScript and creates the production build in `dist/`.
+
+## Deployment
+
+Pushes to `main` are checked, built, and deployed to GitHub Pages by `.github/workflows/main.yml`. Static files in `public/` are copied to the deployment root, including the `CNAME` file for `juniperleaves.com`.

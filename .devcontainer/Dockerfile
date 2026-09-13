@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/devcontainers/javascript-node:5-26
+FROM mcr.microsoft.com/devcontainers/javascript-node:5-24
