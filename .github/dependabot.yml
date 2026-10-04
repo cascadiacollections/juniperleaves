@@ -1,6 +1,9 @@
 version: 2
+# Every ecosystem waits 7 days before proposing a new release: hijacked
+# releases are usually caught and yanked within days, and nothing here is
+# urgent enough to need an update sooner. Security updates are not delayed.
+# Each ecosystem is grouped into one PR so a week's bumps land together.
 updates:
-  # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -8,7 +11,11 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/Los_Angeles"
-    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
+    groups:
+      npm:
+        patterns: ["*"]
     assignees:
       - "KevinTCoughlin"
     commit-message:
@@ -19,7 +26,7 @@ updates:
       - "npm"
     versioning-strategy: increase
 
-  # Maintain dependencies for GitHub Actions
+  # Actions are pinned to commit SHAs; Dependabot bumps the SHA and the version comment together.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -27,6 +34,11 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/Los_Angeles"
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns: ["*"]
     assignees:
       - "KevinTCoughlin"
     commit-message:
@@ -36,7 +48,6 @@ updates:
       - "dependencies"
       - "github-actions"
 
-  # Maintain dependencies for Docker
   - package-ecosystem: "docker"
     directory: "/.devcontainer"
     schedule:
@@ -44,6 +55,8 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/Los_Angeles"
+    cooldown:
+      default-days: 7
     assignees:
       - "KevinTCoughlin"
     commit-message:
