@@ -20,7 +20,7 @@
 | `public/` | Copied unchanged to the site root: `CNAME`, `404.html`, icons, manifest, `robots.txt`, OG image |
 | `.github/workflows/main.yml` | Type-check, build, check the files that must ship, deploy to Pages |
 | `.github/workflows/quality.yml` | Lighthouse CI on PRs and main; lychee link check on PRs, main, and weekly |
-| `.github/workflows/refresh-listings.yml` | Weekly Etsy refresh that opens a PR (needs the `ETSY_API_KEY` secret) |
+| `.github/workflows/refresh-listings.yml` | Weekly Etsy refresh: pushes a branch and opens an issue linking to the PR (needs the `ETSY_API_KEY` secret) |
 
 ## Commands
 

@@ -3,8 +3,12 @@ name: Refresh listings
 # Keeps the featured Etsy listings honest. Once a week, scripts/refresh-listings.ts
 # re-reads each featured listing from the Etsy Open API: prices and photos are
 # updated, and a listing that is no longer active is swapped for the shop's
-# most recently updated one. Any change arrives as a PR to review, never as a
-# direct push to main.
+# most recently updated one. Any change is pushed to a branch and announced in
+# an issue with a one-click link to open the PR; nothing lands on main unreviewed.
+#
+# Why an issue and not a PR: the Cascadia Collections enterprise doesn't let
+# GITHUB_TOKEN create pull requests, and loosening that for every repo to save
+# one click a week isn't worth it.
 #
 # Needs the ETSY_API_KEY repository secret ("keystring:shared_secret" from
 # https://www.etsy.com/developers/your-apps). Without it the job skips.
@@ -28,7 +32,7 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
-      pull-requests: write
+      issues: write
     env:
       BRANCH: automation/refresh-listings
     steps:
@@ -79,17 +83,17 @@ jobs:
             cat "$CHANGES_FILE" >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      # PRs opened with GITHUB_TOKEN don't trigger other workflows, so the
-      # same check CI runs happens here before anything is pushed.
+      # Catch a bad refresh before it reaches a branch; CI runs again on the PR.
       - name: Check and build
         if: steps.refresh.outputs.changed == 'true'
         run: npm run check
 
-      - name: Open or update the refresh PR
+      - name: Push the branch and open or update the issue
         if: steps.refresh.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           CHANGES_FILE: ${{ runner.temp }}/changes.md
+          TITLE: Refresh featured Etsy listings
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -97,18 +101,32 @@ jobs:
           git commit -am "chore(listings): refresh featured Etsy listings"
           git push --force origin "$BRANCH"
 
+          issue=$(gh issue list --state open --json number,title \
+            --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+          if [ -z "$issue" ]; then
+            issue=$(gh issue create --title "$TITLE" --body "Preparing the refresh…" | grep -oE '[0-9]+$')
+          fi
+
           {
             echo "Weekly refresh of the featured listings from the Etsy API."
             echo
             cat "$CHANGES_FILE"
             echo
-            echo "Check the photos and titles read well, then merge to publish."
-          } > "$RUNNER_TEMP/body.md"
+            echo "Closes #$issue"
+          } > "$RUNNER_TEMP/pr.md"
+          title=$(printf '%s' "chore(listings): refresh featured Etsy listings" | jq -sRr @uri)
+          body=$(jq -sRr @uri < "$RUNNER_TEMP/pr.md")
+          link="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/main...$BRANCH?expand=1&title=$title&body=$body"
 
-          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
-            gh pr edit "$BRANCH" --body-file "$RUNNER_TEMP/body.md"
-          else
-            gh pr create --head "$BRANCH" --base main \
-              --title "chore(listings): refresh featured Etsy listings" \
-              --body-file "$RUNNER_TEMP/body.md"
-          fi
+          {
+            echo "The weekly Etsy check found changes to the featured listings:"
+            echo
+            cat "$CHANGES_FILE"
+            echo
+            echo "**[Open the pull request]($link)**, check that the photos and titles read well, then merge to publish."
+            echo "If a PR for \`$BRANCH\` is already open, it has been updated in place."
+            echo
+            echo "_Updated $(date -u +%Y-%m-%d) by [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)._"
+          } > "$RUNNER_TEMP/issue.md"
+          gh issue edit "$issue" --body-file "$RUNNER_TEMP/issue.md"
+          echo "Issue: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/issues/$issue" >> "$GITHUB_STEP_SUMMARY"
