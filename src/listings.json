@@ -1,0 +1,49 @@
+{
+  "updated": "2026-09-11",
+  "listings": [
+    {
+      "id": 1294353183,
+      "title": "Fang Hair Accessories",
+      "url": "https://www.etsy.com/listing/1294353183/fang-hair-accessories",
+      "image": "https://i.etsystatic.com/7622985/r/il/1af4f1/4165063633/il_570xN.4165063633_mktb.jpg",
+      "width": 570,
+      "height": 429,
+      "alt": "Fang print hair accessories from Juniper Leaves",
+      "price": "5.00",
+      "currency": "USD"
+    },
+    {
+      "id": 1206921520,
+      "title": "Just Daisy Hair Accessories",
+      "url": "https://www.etsy.com/listing/1206921520/just-daisy-hair-accessories",
+      "image": "https://i.etsystatic.com/7622985/r/il/4a097c/3834317806/il_570xN.3834317806_tsnh.jpg",
+      "width": 570,
+      "height": 429,
+      "alt": "Just Daisy print hair accessories from Juniper Leaves",
+      "price": "5.00",
+      "currency": "USD"
+    },
+    {
+      "id": 846591547,
+      "title": "PSL Bandana",
+      "url": "https://www.etsy.com/listing/846591547/psl-bandana",
+      "image": "https://i.etsystatic.com/7622985/r/il/db0724/3245678678/il_570xN.3245678678_78bi.jpg",
+      "width": 570,
+      "height": 429,
+      "alt": "PSL autumn dog bandana from Juniper Leaves",
+      "price": "19.50",
+      "currency": "USD"
+    },
+    {
+      "id": 1280335186,
+      "title": "Hazy Daze Key Fob",
+      "url": "https://www.etsy.com/listing/1280335186/hazy-daze-key-fob-wrist-lanyard",
+      "image": "https://i.etsystatic.com/7622985/r/il/0a3bb0/4162933219/il_570xN.4162933219_b5qw.jpg",
+      "width": 570,
+      "height": 429,
+      "alt": "Hazy Daze print key fob wrist lanyard from Juniper Leaves",
+      "price": "10.00",
+      "currency": "USD"
+    }
+  ]
+}

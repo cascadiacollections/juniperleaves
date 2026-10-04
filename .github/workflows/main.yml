@@ -47,11 +47,18 @@ jobs:
           test -f dist/robots.txt
           test -f dist/sitemap.xml
           test -f dist/site.webmanifest
-          test -f dist/icon.png
+          test -f dist/icon.svg
+          test -f dist/icon-192.png
+          test -f dist/icon-512.png
+          test -f dist/icon-maskable-512.png
+          test -f dist/apple-touch-icon.png
           test -f dist/og-image.png
           grep -q '^juniperleaves.com$' dist/CNAME
           grep -q 'https://juniperleaves.com/' dist/sitemap.xml
           grep -q 'static.cloudflareinsights.com/beacon.min.js' dist/index.html
+          grep -q 'Content-Security-Policy' dist/index.html
+          grep -q 'class="product-card"' dist/index.html
+          ! grep -qE '<!-- (csp|listings:[a-z]+) -->|%[A-Z_]+%' dist/index.html
 
       - name: Configure Pages
         if: github.event_name != 'pull_request'

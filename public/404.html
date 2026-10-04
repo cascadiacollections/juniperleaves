@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src https://static.cloudflareinsights.com; style-src 'unsafe-inline'; img-src 'self'; connect-src https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <meta name="theme-color" content="#173b32">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#173b32" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1f1a" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <title>Page not found | Juniper Leaves</title>
     <style>
       * { box-sizing: border-box; }
@@ -36,6 +41,9 @@
         margin: 1.5rem 0;
       }
       p { line-height: 1.7; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #0f1f1a; color: #ece6d6; }
+      }
       a {
         border-bottom: 1px solid currentColor;
         color: inherit;
