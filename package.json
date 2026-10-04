@@ -13,6 +13,7 @@
     "check": "npm run typecheck && npm run build",
     "dev": "vite",
     "preview": "vite preview",
+    "refresh-listings": "node scripts/refresh-listings.ts",
     "typecheck": "tsc --noEmit"
   },
   "author": "Kevin T. Coughlin <kevin@cascadiacollections.com>",
