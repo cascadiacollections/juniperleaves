@@ -20,6 +20,13 @@ npm run dev
 
 Vite serves the site at [http://localhost:5173](http://localhost:5173).
 
+## Featured listings
+
+The four products under "Meet the latest" come from `src/listings.json`. The
+build renders them into the page, into its JSON-LD, and into the sitemap's
+`lastmod`. To feature different products, edit that file; nothing in
+`src/index.html` needs to change.
+
 ## Validation
 
 ```sh
