@@ -51,6 +51,7 @@ jobs:
           test -f dist/og-image.png
           grep -q '^juniperleaves.com$' dist/CNAME
           grep -q 'https://juniperleaves.com/' dist/sitemap.xml
+          grep -q 'static.cloudflareinsights.com/beacon.min.js' dist/index.html
 
       - name: Configure Pages
         if: github.event_name != 'pull_request'
