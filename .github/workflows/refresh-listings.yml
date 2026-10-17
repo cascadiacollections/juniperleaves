@@ -1,6 +1,6 @@
 name: Refresh listings
 
-# Keeps the featured Etsy listings honest. Once a week, scripts/refresh-listings.ts
+# Keeps the featured Etsy listings honest. scripts/refresh-listings.ts
 # re-reads each featured listing from the Etsy Open API: prices and photos are
 # updated, and a listing that is no longer active is swapped for the shop's
 # most recently updated one. Any change is pushed to a branch and announced in
@@ -12,11 +12,14 @@ name: Refresh listings
 #
 # Needs the ETSY_API_KEY repository secret ("keystring:shared_secret" from
 # https://www.etsy.com/developers/your-apps). Without it the job skips.
+#
+# Manual only: Etsy declined the API app (2026-10), so the key is inactive and a
+# scheduled run would fail every week. To bring the weekly run back once a key
+# works, restore:
+#   schedule:
+#     - cron: '0 15 * * 1'  # Mondays 15:00 UTC, an hour before the link check
 
 on:
-  schedule:
-    # Mondays 15:00 UTC (08:00 Pacific), an hour before the link check.
-    - cron: '0 15 * * 1'
   workflow_dispatch:
 
 permissions:
