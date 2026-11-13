@@ -41,7 +41,11 @@ export const renderCards = (listings: Listing[]): string =>
           <article class="product-card">
             <a href="${escapeHtml(listing.url)}?ref=shop_home_active_${index + 1}" rel="noopener noreferrer">
               <div class="product-image">
-                <img src="${escapeHtml(listing.image)}" width="${listing.width}" height="${listing.height}" loading="lazy" decoding="async" alt="${escapeHtml(listing.alt)}">
+                <img src="${escapeHtml(listing.image)}" width="${listing.width}" height="${listing.height}" ${
+                  // The grid sits right under the hero, so every card is above the
+                  // fold on desktop: load them all eagerly and prioritise the first.
+                  index === 0 ? 'fetchpriority="high" ' : ''
+                }decoding="async" alt="${escapeHtml(listing.alt)}">
                 <span>Shop on Etsy ↗</span>
               </div>
               <div class="product-meta">

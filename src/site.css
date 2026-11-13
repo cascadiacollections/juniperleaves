@@ -110,9 +110,11 @@ footer {
 }
 
 .hero {
+  align-items: stretch;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(22rem, 0.95fr);
-  min-height: 44rem;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 1fr);
+  padding: 0 clamp(1.25rem, 4vw, 4.5rem);
 }
 
 .hero-copy {
@@ -120,14 +122,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(4rem, 9vw, 8rem) clamp(1.5rem, 7vw, 7rem);
+  padding: clamp(0.5rem, 2vw, 1.5rem) 0 clamp(1rem, 2vw, 1.5rem);
 }
 
 .eyebrow {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.16em;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.1rem;
   text-transform: uppercase;
 }
 
@@ -139,26 +141,22 @@ h1,
 }
 
 h1 {
-  font-size: clamp(3.5rem, 7.3vw, 7.5rem);
-  line-height: 0.93;
+  font-size: clamp(2.4rem, 4.6vw, 4.6rem);
+  line-height: 0.95;
   margin: 0;
 }
 
 .intro {
   font-family: var(--serif);
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
-  line-height: 1.55;
-  margin: 2.25rem 0;
-  max-width: 33rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.5;
+  margin: 1rem 0 1.4rem;
+  max-width: 36rem;
 }
 
 /* Holiday 2026: remove after the season (see PR). */
-.holiday-note {
+.section-heading > .holiday-note {
   border-left: 3px solid var(--clay);
-  font-size: 0.98rem;
-  line-height: 1.5;
-  margin: -1rem 0 2rem;
-  max-width: 33rem;
   padding-left: 0.85rem;
 }
 
@@ -185,7 +183,7 @@ h1 {
 
 .hero-art {
   background: var(--forest);
-  min-height: 38rem;
+  min-height: 18rem;
   overflow: hidden;
   position: relative;
 }
@@ -193,11 +191,11 @@ h1 {
 .sun {
   background: var(--clay);
   border-radius: 50%;
-  height: clamp(14rem, 30vw, 28rem);
+  height: clamp(9rem, 17vw, 15rem);
   left: 13%;
   position: absolute;
   top: 12%;
-  width: clamp(14rem, 30vw, 28rem);
+  width: clamp(9rem, 17vw, 15rem);
 }
 
 .branch {
@@ -240,12 +238,11 @@ h1 {
   border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 4vw, 4.5rem);
+  margin: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 4vw, 4.5rem);
 }
 
 .values article {
-  min-height: 17rem;
-  padding: 2.5rem clamp(1.25rem, 3vw, 3rem);
+  padding: 2rem clamp(1.25rem, 3vw, 3rem);
 }
 
 .values article + article {
@@ -263,7 +260,7 @@ h1 {
   font-family: var(--serif);
   font-size: clamp(1.7rem, 2.5vw, 2.4rem);
   font-weight: 400;
-  margin: 3.75rem 0 1rem;
+  margin: 1.25rem 0 0.75rem;
 }
 
 .values p,
@@ -278,32 +275,32 @@ h1 {
 
 .products {
   background: var(--paper);
-  padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 4vw, 4.5rem);
+  padding: clamp(1rem, 1.5vw, 1.25rem) clamp(1.25rem, 4vw, 4.5rem) clamp(2.5rem, 5vw, 4rem);
 }
 
 .section-heading {
   align-items: end;
   display: grid;
-  gap: 3rem;
+  gap: 0.5rem 3rem;
   grid-template-columns: 1.2fr 0.8fr;
-  margin-bottom: clamp(2.5rem, 5vw, 5rem);
+  margin-bottom: 1rem;
 }
 
 .section-heading .eyebrow {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-heading h2 {
   font-family: var(--serif);
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
   font-weight: 400;
-  letter-spacing: -0.045em;
-  line-height: 0.96;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
   margin: 0;
 }
 
 .section-heading > p {
-  line-height: 1.75;
+  line-height: 1.6;
   margin: 0;
   max-width: 31rem;
 }
@@ -320,7 +317,7 @@ h1 {
 }
 
 .product-image {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   background: var(--cream);
   overflow: hidden;
   position: relative;
@@ -366,12 +363,12 @@ h1 {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  padding: 1.25rem 0;
+  padding: 0.85rem 0;
 }
 
 .product-meta h3 {
   font-family: var(--serif);
-  font-size: clamp(1.2rem, 1.6vw, 1.55rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
   font-weight: 400;
   margin: 0;
 }
@@ -389,7 +386,7 @@ h1 {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 2.25rem;
+  margin-top: 1.5rem;
 }
 
 .products-footer > p {
@@ -448,12 +445,8 @@ footer p:last-child {
     grid-template-columns: 1fr;
   }
 
-  .hero-copy {
-    min-height: 39rem;
-  }
-
   .hero-art {
-    min-height: 36rem;
+    display: none;
   }
 
   .values {
@@ -504,15 +497,18 @@ footer p:last-child {
   }
 
   .hero-copy {
-    min-height: 34rem;
-  }
-
-  .hero-art {
-    min-height: 30rem;
+    padding-top: 0.25rem;
   }
 
   .product-grid {
-    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .product-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.6rem 0 0.75rem;
   }
 
   .products-footer {
