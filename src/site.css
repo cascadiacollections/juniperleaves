@@ -152,6 +152,16 @@ h1 {
   max-width: 33rem;
 }
 
+/* Holiday 2026: remove after the season (see PR). */
+.holiday-note {
+  border-left: 3px solid var(--clay);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: -1rem 0 2rem;
+  max-width: 33rem;
+  padding-left: 0.85rem;
+}
+
 .button {
   align-items: center;
   background: var(--forest);
