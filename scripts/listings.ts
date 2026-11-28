@@ -69,12 +69,21 @@ export const renderJsonLd = (listings: Listing[]): string =>
         item: {
           '@type': 'Product',
           name: listing.title,
+          // The image alt is the only hand-written description of each product.
+          description: listing.alt,
           image: listing.image,
           url: listing.url,
+          brand: {
+            '@type': 'Brand',
+            name: 'Juniper Leaves'
+          },
           offers: {
             '@type': 'Offer',
             price: listing.price,
             priceCurrency: listing.currency,
+            // Featured listings are offered on the page; none are marked unavailable.
+            // Checkout still confirms live availability — this is not an inventory feed.
+            availability: 'https://schema.org/InStock',
             url: listing.url
           }
         }
